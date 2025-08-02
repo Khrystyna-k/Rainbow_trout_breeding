@@ -1,10 +1,12 @@
 
+# Analyses of breeding values estimated with blupf90
+```{r}
 # Load required packages
 library(tidyverse)
 library(here)
 
 
-# ─────────────────────────────────────────────────────────────
+
 # Helper Function: Load and filter EBVs
 load_and_filter_ebv <- function(path, effect_value) {
   read_table(here("data", path), col_names = TRUE) %>%
@@ -19,7 +21,7 @@ merge_pedigree <- function(ebv_df, pedigree_df, keep_col = "remove", keep_val = 
     select(id, solution, `s.e.`)
 }
 
-# ─────────────────────────────────────────────────────────────
+
 # Load pedigree files
 ped_16 <- read_table(here("data", "renadd05_16.ped"), col_names = FALSE)
 ped_19 <- read_table(here("data", "renadd04_19.ped"), col_names = FALSE)
@@ -50,7 +52,6 @@ write_table_safe(ebv_16_w_1_clean, "ebv_16_weight_1st.txt")
 write_table_safe(ebv_19_l_1_clean, "ebv_19_length_1st.txt")
 write_table_safe(ebv_19_w_1_clean, "ebv_19_weight_1st.txt")
 
-# ─────────────────────────────────────────────────────────────
 # Load libraries
 library(tidyverse)
 library(ggpubr)
@@ -143,3 +144,7 @@ ggsave(here("results/ebv_combined.png"), combined_plot, width = 13, height = 12,
 describeBy(length_summary %>% filter(Generation == "G0"), group = "Age")
 describeBy(length_summary %>% filter(Generation == "G1"), group = "Age")
 describeBy(length_summary %>% filter(Generation == "Combined G0 and G1"), group = "Age")
+
+```
+
+
