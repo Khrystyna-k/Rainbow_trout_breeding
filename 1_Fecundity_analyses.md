@@ -1,4 +1,6 @@
+# Plot means for fecundity and egg survival traits in generation 0 (G0) and generation 1 (G1)
 
+```{r}
 # Load libraries
 library(tidyverse)
 library(ggpubr)
@@ -40,4 +42,4 @@ plot_survival <- ggboxplot(
 combined_plot <- ggarrange(plot_fecundity, plot_survival, nrow = 1)
 ggsave(here("results/Fecundity_Survival.pdf"), combined_plot, width = 8, height = 4, dpi = 300)
 
-
+```
