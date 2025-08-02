@@ -1,5 +1,6 @@
-# scripts/plot_parent_growth.R
+# Scale data before the BLUP analyses
 
+```{r}
 # Load required libraries
 library(tidyverse)
 library(ggpubr)
@@ -32,6 +33,6 @@ growth16_19_norm <- growth16_norm %>%
 
 
 write.table(growth16_19_norm, file =  "growth16_19_norm.txt", append = FALSE, sep =" ", dec = ".",row.names = F, col.names = F)
-
+```
 
 
