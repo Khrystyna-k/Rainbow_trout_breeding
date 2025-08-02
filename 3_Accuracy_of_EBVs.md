@@ -1,12 +1,12 @@
+# This section evaluates the accuracy of mid-parent Estimated Breeding Values (EBVs) for rainbow trout by comparing them with adjusted phenotypes (y_star) from year class 2019 (first and second measurements). Accuracy is visualized via scatter plots with marginal histograms.
+
+```{r}
 # Load required libraries
 library(tidyverse)
 library(ggpubr)
 library(ggExtra)
 library(gridExtra)
 library(here)
-
-
-# This section evaluates the accuracy of mid-parent Estimated Breeding Values (EBVs) for rainbow trout by comparing them with adjusted phenotypes (y_star) from year class 2019 (first and second measurements). Accuracy is visualized via scatter plots with marginal histograms.
 
 # Load adjusted phenotype predictions (y_star) from the first measurement
 yhat_1st <- read.table("yhat_residual_19_l_1st", header = TRUE)
@@ -102,3 +102,5 @@ g_2 <- ggMarginal(g_2, type = "histogram", fill = "grey", xparams = list(bins = 
 # Combine and export the accuracy plots
 acc <- gridExtra::grid.arrange(g_1st, g_2, ncol = 2)
 ggsave(path = " ", "Accuracy.png", acc, width = 11, height = 6, dpi = 300)
+
+```
