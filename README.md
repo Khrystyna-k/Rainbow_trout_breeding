@@ -5,5 +5,8 @@ Kurta, K., Jeuthe, H., de Koning, D. J., & Palaiokostas, C. (2023). Insights fro
 
 ## Data Analysis Workflow
 
-<img width="1022" height="524" alt="image" src="https://github.com/user-attachments/assets/fc9a9cb5-71f2-4ac0-9982-8492cb67b722" />
+<img width="970" height="524" alt="image" src="https://github.com/user-attachments/assets/acb244c6-88de-426d-87c4-622cf83bd053" />
+
+
+
 
