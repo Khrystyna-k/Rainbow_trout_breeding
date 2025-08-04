@@ -9,7 +9,7 @@ Kurta, K., Jeuthe, H., de Koning, D. J., & Palaiokostas, C. (2023). Insights fro
 
 ## Highlighted Results
 
-<img width="482" height="525" alt="image" src="https://github.com/user-attachments/assets/9b547aff-604f-4930-a592-a43b66894e0f" />
+<img width="483" height="525" alt="image" src="https://github.com/user-attachments/assets/c7c609ed-6b84-4994-b248-29f21b0ac153" />
 
 
 
